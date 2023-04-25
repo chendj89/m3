@@ -6,8 +6,8 @@ export const asyncRoutes = [
     component: LAYOUT,
     name: 'Index',
     meta: {
-      title: 'Dashboard',
-      iconPrefix: 'iconfont',
+      title: '首页',
+      iconPrefix: 'icon',
       icon: 'dashboard',
     },
     children: [
@@ -19,7 +19,7 @@ export const asyncRoutes = [
           title: '主控台',
           affix: true,
           cacheable: true,
-          iconPrefix: 'iconfont',
+          iconPrefix: 'icon',
           icon: 'menu',
         },
       },
@@ -31,7 +31,7 @@ export const asyncRoutes = [
           title: '工作台',
           affix: true,
           cacheable: true,
-          iconPrefix: 'iconfont',
+          iconPrefix: 'icon',
           icon: 'menu',
         },
       },

@@ -10,7 +10,7 @@
           <span>
             {{ item.label }}
             <n-icon>
-              <ChevronDown />
+              <SvgIcon name="down"></SvgIcon>
             </n-icon>
           </span>
         </n-dropdown>
@@ -24,7 +24,6 @@
   import { isExternal } from '@/utils'
   import { defineComponent, onMounted, reactive, watch } from 'vue'
   import {type  RouteRecordNormalized, useRoute, useRouter } from 'vue-router'
-  import { ChevronDown } from '@vicons/ionicons5'
   interface DropItem {
     label: string
     key: string
@@ -32,7 +31,6 @@
   }
   export default defineComponent({
     name: 'Breadcrumb',
-    components: { ChevronDown },
     setup() {
       const breadcrumbs = reactive([] as Array<DropItem>)
       const route = useRoute()

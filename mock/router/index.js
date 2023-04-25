@@ -4,7 +4,7 @@ import Mock from "mockjs";
 export const adminRoutes = [
   {
     menuUrl: "/index",
-    menuName: "Dashborad",
+    menuName: "首页",
     routeName: "dashborad",
     icon: "icon-dashboard",
     parentPath: "",
@@ -27,9 +27,8 @@ export const adminRoutes = [
   {
     menuUrl: "/form",
     menuName: "表单页面",
-    badge: "New",
-    iconPrefix: "iconfont",
-    icon: "file-text",
+    iconPrefix: "icon",
+    icon: "tools",
     parentPath: "",
     children: [
       {
@@ -37,18 +36,7 @@ export const adminRoutes = [
         menuUrl: "/form/base-form-view",
         menuName: "动态表单",
         cacheable: true,
-      },
-      {
-        parentPath: "/form",
-        menuUrl: "/form/advance-form",
-        menuName: "高级表单",
-        cacheable: true,
-      },
-      {
-        parentPath: "/form",
-        menuUrl: "/form/step-form",
-        menuName: "分步表单",
-        cacheable: true,
+        badge: "New",
       },
     ],
   },
