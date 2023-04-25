@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import type { UserState } from '../types'
 import store from '../pinia'
 
-import Avatar from '@/assets/img_avatar.gif'
+import Avatar from '@/assets/avatar.jpg'
 
 const defaultAvatar = Avatar
 

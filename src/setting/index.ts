@@ -7,12 +7,12 @@ import {
   ThemeMode,
 } from '@/store/types'
 
-export const projectName = 'Admin Work'
+export const projectName = '九转灵山'
 
 export default {
   theme: ThemeMode.LIGHT,
   sideTheme: SideTheme.WHITE,
-  themeColor: '#409eff',
+  themeColor: '#18a058',
   layoutMode: LayoutMode.LTR,
   sideWidth: 210,
   deviceType: DeviceType.PC,

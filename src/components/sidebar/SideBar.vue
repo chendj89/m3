@@ -88,7 +88,6 @@
 
 <style scoped lang="scss">
   .sidebar-bg-img {
-    background-image: url('../../assets/bg_img.webp') !important;
     background-size: cover;
   }
   .open-status {

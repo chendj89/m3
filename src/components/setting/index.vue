@@ -116,7 +116,6 @@
 <script lang="ts">
   import { defineComponent, onMounted, reactive, ref, watch } from 'vue'
   import type { ModalDialogType } from '@/types/components'
-  import LeftBg from '@/assets/bg_img.webp'
   import useAppConfigStore from '@/store/modules/app-config'
   import type { PageAnim } from '@/store/types'
   export default defineComponent({
@@ -161,7 +160,6 @@
           themeId: 'white',
         },
         {
-          leftBg: `url(${LeftBg})`,
           rightTopBg: '#ffffff',
           rightBottomBg: '#f5f5f5',
           checked: false,

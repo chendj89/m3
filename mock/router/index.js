@@ -34,7 +34,7 @@ export const adminRoutes = [
       {
         parentPath: "/form",
         menuUrl: "/form/base-form-view",
-        menuName: "动态表单",
+        menuName: "转码",
         routeName: "BaseFromView",
         cacheable: true,
         badge: "New",

@@ -210,7 +210,7 @@ export function transfromMenu(
         },
         [
           h("div", null, [item.meta?.title]),
-          h(NBadge, { type: "success", value: item.meta.badge }),
+          h(NBadge, { size:"small",type: "success", value: item.meta.badge }),
         ]
       );
     } else {
