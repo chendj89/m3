@@ -12,12 +12,13 @@
         </span>
       </div>
     </n-dropdown>
+    <Setting ref="settingRef" />
   </div>
 </template>
 
 <script lang="ts">
 import { NIcon, useDialog } from "naive-ui";
-import { defineComponent, h } from "vue";
+import { defineComponent, h, ref } from "vue";
 import useUserStore from "@/store/modules/user";
 import { useRouter } from "vue-router";
 
@@ -34,6 +35,10 @@ export default defineComponent({
       {
         label: "退出登录",
         key: "logout",
+      },
+      {
+        label: "主题",
+        key: "theme",
       },
     ];
     function personalCenter() {
@@ -61,12 +66,17 @@ export default defineComponent({
         case "logout":
           logout();
           break;
+        case "theme":
+        settingRef.value.openDrawer()
+          break;
       }
     }
+    const settingRef = ref();
     return {
       userStore,
       options,
       handleSelect,
+      settingRef,
     };
   },
 });
