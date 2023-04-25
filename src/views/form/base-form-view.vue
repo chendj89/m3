@@ -17,12 +17,21 @@
   </n-grid>
 </template>
 
-<script setup lang="ts">
-import { ref, computed } from "vue";
-const input = ref("");
-const text = computed(() => {
-  let txt = input.value;
-  return unescape(txt.replace(/\\u/g, "%u"));
+<script lang="ts">
+import { defineComponent,ref,computed } from "vue";
+export default defineComponent({
+  name: "BaseFromView",
+  setup() {
+    const input = ref("");
+    const text = computed(() => {
+      let txt = input.value;
+      return unescape(txt.replace(/\\u/g, "%u"));
+    });
+    return {
+      input,
+      text
+    }
+  },
 });
 </script>
 
