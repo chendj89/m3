@@ -33,11 +33,18 @@ export const adminRoutes = [
     children: [
       {
         parentPath: "/form",
-        menuUrl: "/form/base-form-view",
+        menuUrl: "/form/unescape",
         menuName: "转码",
-        routeName: "BaseFromView",
+        routeName: "Unescape",
         cacheable: true,
         badge: "New",
+      },
+      {
+        parentPath: "/form",
+        menuUrl: "/form/table",
+        menuName: "表格",
+        routeName: "Table",
+        cacheable: true,
       },
     ],
   },
