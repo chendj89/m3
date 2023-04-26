@@ -37,6 +37,6 @@ export default defineComponent({
     };
   },
   render() {
-    return <img width={32} src={this.aSrc} />;
+    return <img width={20} src={this.aSrc} />;
   },
 });

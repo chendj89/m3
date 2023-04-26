@@ -108,19 +108,19 @@ export default defineComponent({
         key: "name",
       },
       {
-        title: "描述",
-        key: "desc",
-      },
-      {
         title: "图标",
         key: "icon",
         render: (item: any) => {
           if (item.icon.indexOf("svg") > -1) {
             return h(StoreIcon, { src: item.icon });
           } else {
-            return h("img", { width: 32, src: item.icon });
+            return h("img", { width: 20, src: item.icon });
           }
         },
+      },
+      {
+        title: "描述",
+        key: "desc",
       },
     ];
     let result: any = ref([]);
