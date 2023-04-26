@@ -15,7 +15,6 @@
         :autosize="{ minRows: 10 }"
       ></n-input>
     </n-gi>
-
   </n-grid>
 </div>
 </template>
