@@ -133,11 +133,6 @@ export default defineComponent({
     } else {
       fetch(
         "https://api.github.com/repos/chendj89/data/issues?sort=created&direction=asc&labels=menu",
-        {
-          headers: {
-            authorization: "token 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",
-          },
-        }
       )
         .then((res) => res.json())
         .then((res) => {
