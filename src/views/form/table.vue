@@ -45,11 +45,13 @@ export function useRequire(urls: string[], maxNum: number) {
       const url = urls[index];
       index++;
       try {
-      let token1='ghp_27GSqOGEdlUH9G8'
-      let token2='LxF4hqMVDWzN9ij2BDi7S'
+      let token=localStorage.getItem('auth')
+      if(token){
+        token=`token `+token;
+      }
         results[i] = await fetch(url, {
           headers: {
-            authorization: token1+token2,
+            authorization: token,
           },
         }).then((res) => res.json());
       } catch (error) {
