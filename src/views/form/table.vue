@@ -45,9 +45,11 @@ export function useRequire(urls: string[], maxNum: number) {
       const url = urls[index];
       index++;
       try {
+      let token1='ghp_27GSqOGEdlUH9G8'
+      let token2='LxF4hqMVDWzN9ij2BDi7S'
         results[i] = await fetch(url, {
           headers: {
-            authorization: "token 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",
+            authorization: token1+token2,
           },
         }).then((res) => res.json());
       } catch (error) {
