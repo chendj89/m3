@@ -1,0 +1,1 @@
+import{d as n,_ as o,o as t,c as a,a as s,b as c,a3 as _}from"./index-5107809d.js";const r=n({name:"WorkPlace",setup(){}}),p=c("div",null,"123",-1);function d(l,i,u,m,f,k){const e=_;return t(),a("div",null,[p,s(e)])}const x=o(r,[["render",d]]);export{x as default};

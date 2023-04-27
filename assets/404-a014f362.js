@@ -1,0 +1,1 @@
+import e from"./ExceptionStatus-4255afcd.js";import{d as o,_ as n,o as s,c as a,a as c,r}from"./index-5107809d.js";const p=o({name:"Page404",components:{ExceptionStatus:e}}),_={class:"main-container"};function i(m,d,f,u,l,x){const t=r("ExceptionStatus");return s(),a("div",_,[c(t,{status:"404"})])}const S=n(p,[["render",i]]);export{S as default};

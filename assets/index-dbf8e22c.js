@@ -1,0 +1,1 @@
+import{d as r,_ as s,o as n,c}from"./index-5107809d.js";const a=r({created(){const{params:t,query:o}=this.$route,{path:e}=t;this.$router.replace({path:"/"+(typeof e=="string"?e:e.join("/")),query:o})}}),i={class:"redirect-contianer"};function p(t,o,e,d,_,f){return n(),c("div",i)}const h=s(a,[["render",p]]);export{h as default};
