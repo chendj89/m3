@@ -11,6 +11,7 @@
         :collapsed-icon-size="22"
         :collapsed-width="63"
         :indent="15"
+        :dropdown-props="menuProps"
         @update:value="onMenuClick"
         @update:expanded-keys="onMenuExpandedKeysClick"
       />
@@ -21,7 +22,7 @@
 <script lang="ts">
   import useAppConfigStore from '@/store/modules/app-config'
   import { DeviceType } from '@/store/types'
-  import type { MenuOption } from 'naive-ui'
+  import { menuProps, type MenuOption } from 'naive-ui'
   import { defineComponent, type PropType, ref, shallowReactive, watch, watchEffect } from 'vue'
   import { type RouteRecordNormalized, useRoute, useRouter } from 'vue-router'
   import { isExternal } from '@/utils'
@@ -91,6 +92,9 @@
         menuOptions,
         onMenuClick,
         onMenuExpandedKeysClick,
+        menuProps:{
+          style:'width:180px'
+        }
       }
     },
   })
