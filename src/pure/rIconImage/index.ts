@@ -1,4 +1,5 @@
 import { svg } from '@/utils/regExp'
+import storeIcon from '@/views/form/storeIcon'
 import { NIcon, NAvatar } from 'naive-ui'
 import { h } from 'vue'
 interface iRIimage {
@@ -16,6 +17,7 @@ interface iRIimage {
 export default function rIconImage(opts: iRIimage) {
   const isSvg = svg.test(opts.src)
   let { src, ...rest } = opts
+  // return h(storeIcon,{src,...rest});
   if (isSvg) {
     return h(NIcon, { innerHTML: src, ...rest })
   } else {
