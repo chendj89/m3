@@ -13,6 +13,9 @@
     <StoreIcon
       src="https://api.iconify.design/fluent-emoji-flat:robot.svg?color=%23ff0000"
     ></StoreIcon>
+    <StoreIcon
+      src="https://chendj89.github.io/chendj89/assets/xiaochou.jpg"
+    ></StoreIcon>
   </div>
 </template>
 
